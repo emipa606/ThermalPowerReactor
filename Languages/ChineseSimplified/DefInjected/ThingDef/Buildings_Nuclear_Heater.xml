@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Uranium_Heater.label>铀裂变加热核心</Uranium_Heater.label>
+  <Uranium_Heater.description>一款铀裂变加热核心，可以加热周围到很高温度。</Uranium_Heater.description>
+  <Hydrogen_Heater.label>氢聚变加热核心</Hydrogen_Heater.label>
+  <Hydrogen_Heater.description>一款氢聚变加热核心，可以加热周围到很高温度。</Hydrogen_Heater.description>
+  <!--<Uranium_Heater_Blueprint.label>铀裂变加热核心(蓝图)</Uranium_Heater_Blueprint.label>-->
+  <!--<Uranium_Heater_Frame.label>铀裂变加热核心(建造中)</Uranium_Heater_Frame.label>-->
+  <!--<Uranium_Heater_Frame.description>一款铀裂变加热核心，可以加热周围。</Uranium_Heater_Frame.description>-->
+  <!--<Hydrogen_Heater_Blueprint.label>氢聚变加热核心(蓝图)</Hydrogen_Heater_Blueprint.label>-->
+  <!--<Hydrogen_Heater_Frame.label>氢聚变加热核心(建造中)</Hydrogen_Heater_Frame.label>-->
+  <!--<Hydrogen_Heater_Frame.description>一款氢聚变加热核心，可以加热周围到很高温度。</Hydrogen_Heater_Frame.description>-->
+</LanguageData>

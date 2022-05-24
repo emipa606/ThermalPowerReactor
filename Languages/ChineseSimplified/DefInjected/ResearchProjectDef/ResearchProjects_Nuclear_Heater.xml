@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Atomic_basis.label>原子学基础</Atomic_basis.label>
+  <Atomic_basis.description>原子学基础，在此之后，你可以由此研究反应堆。</Atomic_basis.description>
+  <Uranium_Heater_Research.label>铀裂变加热器</Uranium_Heater_Research.label>
+  <Uranium_Heater_Research.description>解锁铀裂变加热器。</Uranium_Heater_Research.description>
+  <Hydrogen_Heater_Research.label>氢聚变加热器</Hydrogen_Heater_Research.label>
+  <Hydrogen_Heater_Research.description>解锁氢聚变加热器。</Hydrogen_Heater_Research.description>
+</LanguageData>

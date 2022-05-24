@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Thermoelectric_Generator_S.label>热能发电机（小型）</Thermoelectric_Generator_S.label>
+  <Thermoelectric_Generator_S.description>通过高温使内置引擎运转而发电。</Thermoelectric_Generator_S.description>
+  <Thermoelectric_Generator_M.label>热能发电机（中型）</Thermoelectric_Generator_M.label>
+  <Thermoelectric_Generator_M.description>通过高温使内置引擎运转而发电。</Thermoelectric_Generator_M.description>
+  <Thermoelectric_Generator_H.label>热能发电机（大型）</Thermoelectric_Generator_H.label>
+  <Thermoelectric_Generator_H.description>通过高温使内置引擎运转而发电。</Thermoelectric_Generator_H.description>
+  <!--<Thermoelectric_Generator_S_Blueprint.label>热能发电机（小型）(蓝图)</Thermoelectric_Generator_S_Blueprint.label>-->
+  <!--<Thermoelectric_Generator_S_Frame.label>热能发电机（小型）(建造中)</Thermoelectric_Generator_S_Frame.label>-->
+  <!--<Thermoelectric_Generator_S_Frame.description>通过高温使内置引擎运转而发电。</Thermoelectric_Generator_S_Frame.description>-->
+  <!--<Thermoelectric_Generator_M_Blueprint.label>热能发电机（中型）(蓝图)</Thermoelectric_Generator_M_Blueprint.label>-->
+  <!--<Thermoelectric_Generator_M_Frame.label>热能发电机（中型）(建造中)</Thermoelectric_Generator_M_Frame.label>-->
+  <!--<Thermoelectric_Generator_M_Frame.description>通过高温使内置引擎运转而发电。</Thermoelectric_Generator_M_Frame.description>-->
+  <!--<Thermoelectric_Generator_H_Blueprint.label>热能发电机（大型）(蓝图)</Thermoelectric_Generator_H_Blueprint.label>-->
+  <!--<Thermoelectric_Generator_H_Frame.label>热能发电机（大型）(建造中)</Thermoelectric_Generator_H_Frame.label>-->
+  <!--<Thermoelectric_Generator_H_Frame.description>通过高温使内置引擎运转而发电。</Thermoelectric_Generator_H_Frame.description>-->
+</LanguageData>

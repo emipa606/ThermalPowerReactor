@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Make_HydrogenFromChemfuel.label>制作氢气</Make_HydrogenFromChemfuel.label>
+  <Make_HydrogenFromChemfuel.description>一种可以进行核反应的气体，可以从化合燃料中提取</Make_HydrogenFromChemfuel.description>
+  <Make_HydrogenFromChemfuel.jobString>从化合燃料中提取氢气中</Make_HydrogenFromChemfuel.jobString>
+</LanguageData>

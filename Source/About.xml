@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Thermal Power:Reactor</name>
+  <author>[cn]nuclear</author>
+  <url>http://steamcommunity.com/profiles/76561198173739010</url>
+  <supportedVersions>
+    <li>1.0</li>
+  </supportedVersions>
+  <description>
+	This mod add tow Reactor for produce heat,And you can use the thermal dynamo to change it became electric power.
+	</description>
+</ModMetaData>
