@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Uranium_Heater.label>Урановое ядерное энергетическое ядро</Uranium_Heater.label>
+  <Uranium_Heater.description>Ядерное энергетическое ядро урана. Оно может нагреться до более высокой температуры.</Uranium_Heater.description>
+  <Hydrogen_Heater.label>Водородное ядерное энергетическое ядро</Hydrogen_Heater.label>
+  <Hydrogen_Heater.description>Водородное ядерное энергетическое ядро. Оно может нагреться до более высокой температуры.</Hydrogen_Heater.description>
+</LanguageData>

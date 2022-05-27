@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Thermoelectric_Generator_S.label>Термоэлектрический генератор</Thermoelectric_Generator_S.label>
+  <Thermoelectric_Generator_S.description>Генерируемый высокой температурой для запуска встроенного двигателя.</Thermoelectric_Generator_S.description>
+  <Thermoelectric_Generator_M.label>Термоэлектрический генератор (средний)</Thermoelectric_Generator_M.label>
+  <Thermoelectric_Generator_M.description>Генерируемый высокой температурой для запуска встроенного двигателя.</Thermoelectric_Generator_M.description>
+  <Thermoelectric_Generator_H.label>Термоэлектрический генератор (огромный)</Thermoelectric_Generator_H.label>
+  <Thermoelectric_Generator_H.description>Генерируемый высокой температурой для запуска встроенного двигателя.</Thermoelectric_Generator_H.description>
+</LanguageData>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Make_HydrogenFromChemfuel.label>Сделать водород из химотоплива</Make_HydrogenFromChemfuel.label>
+  <Make_HydrogenFromChemfuel.description>Сделать партию водорода, извлекая и конденсируя водород из химического топлива.</Make_HydrogenFromChemfuel.description>
+  <Make_HydrogenFromChemfuel.jobString>Очистка водорода из химотоплива.</Make_HydrogenFromChemfuel.jobString>
+</LanguageData>

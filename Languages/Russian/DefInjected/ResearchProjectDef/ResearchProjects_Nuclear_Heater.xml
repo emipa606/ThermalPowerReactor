@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Atomic_basis.label>Атомная основа</Atomic_basis.label>
+  <Atomic_basis.description>Атомная основа. После этого исследования у вас может быть возможность построить ядерный нагреватель.</Atomic_basis.description>
+  <Uranium_Heater_Research.label>Урановый Нагреватель</Uranium_Heater_Research.label>
+  <Uranium_Heater_Research.description>Разблокируйте строение - урановый обогреватель.</Uranium_Heater_Research.description>
+  <Hydrogen_Heater_Research.label>Водонагреватель</Hydrogen_Heater_Research.label>
+  <Hydrogen_Heater_Research.description>Разблокируйте строение - урановый обогреватель.</Hydrogen_Heater_Research.description>
+</LanguageData>
