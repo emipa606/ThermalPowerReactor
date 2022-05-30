@@ -16,6 +16,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1449400903
 
 
 
+- Russian translation added, thanks Dmitry6!
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	
