@@ -17,6 +17,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1449400903
 
 
 - Russian translation added, thanks Dmitry6!
+- As vanilla changed the max-temperature for rooms to 1000C, Harmony is now needed to make the power-output the same value as before.
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 

@@ -60,7 +60,7 @@ public class TReactorHuge : TCP
 
         if (tempChange)
         {
-            CompPowerPlant.PowerOutput = props.basePowerConsumption * num5;
+            CompPowerPlant.PowerOutput = props.PowerConsumption * num5;
         }
         else
         {

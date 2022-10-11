@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>Make_HydrogenFromChemfuel</defName>
+    <label>Make Hydrogen From Chemfuel</label>
+    <description>Make a batch of Hydrogen by extracting and condensing Hydrogen from Chemfuel.</description>
+    <jobString>Refining Hydrogen from Chemfuel.</jobString>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <products>
+      <Hydrogen_Nuclear>50</Hydrogen_Nuclear>
+    </products>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

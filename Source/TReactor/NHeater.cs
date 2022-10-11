@@ -35,18 +35,18 @@ public class NHeater : NTempnuclear
             compRefuelable.Props.fuelConsumptionRate = i;
             var room = this.GetRoom();
             room.Temperature += num2;
-            compPowerTrader.PowerOutput = 0f - props.basePowerConsumption;
+            compPowerTrader.PowerOutput = 0f - props.PowerConsumption;
         }
         else if (operatingAtHighPower)
         {
             compRefuelable.Props.fuelConsumptionRate = i;
-            compPowerTrader.PowerOutput = 0f - props.basePowerConsumption;
+            compPowerTrader.PowerOutput = 0f - props.PowerConsumption;
         }
         else if (compTempControl.parent.IsHashIntervalTick(60))
         {
             compRefuelable.Props.fuelConsumptionRate = 0.1f;
             compPowerTrader.PowerOutput =
-                (0f - props.basePowerConsumption) * compTempControl.Props.lowPowerConsumptionFactor;
+                (0f - props.PowerConsumption) * compTempControl.Props.lowPowerConsumptionFactor;
             var room = this.GetRoom();
             room.Temperature += num2 * (0.1f / i);
         }
@@ -54,7 +54,7 @@ public class NHeater : NTempnuclear
         {
             compRefuelable.Props.fuelConsumptionRate = 0.1f;
             compPowerTrader.PowerOutput =
-                (0f - props.basePowerConsumption) * compTempControl.Props.lowPowerConsumptionFactor;
+                (0f - props.PowerConsumption) * compTempControl.Props.lowPowerConsumptionFactor;
         }
 
         compExplosive.CompTick();
