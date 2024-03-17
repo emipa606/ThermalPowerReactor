@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>a508a92e-3e7e-4ee8-961f-96d96728d626</ID>
   <ModName>Thermal Power:Reactor (Continued)</ModName>
-  <Version>1.4.1</Version>
+  <Version>1.5.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>

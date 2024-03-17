@@ -29,7 +29,7 @@ public class TReactorHuge : TCP
                 num = temperature - 1000f;
             }
 
-            var num2 = 1f - (num * (1f / 130f));
+            var num2 = 1f - (num * EfficiencyLossPerDegreeDifference);
             if (num2 < 0f)
             {
                 num2 = 0f;

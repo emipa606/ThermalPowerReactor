@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
@@ -12,8 +11,8 @@ public class PlaceWorker_Cooler_2_Block : PlaceWorker
         var currentMap = Find.CurrentMap;
         var intVec = center + IntVec3.South.RotatedBy(rot);
         var intVec2 = center + IntVec3.North.RotatedBy(rot) + IntVec3.North.RotatedBy(rot);
-        GenDraw.DrawFieldEdges(new List<IntVec3> { intVec }, GenTemperature.ColorSpotCold);
-        GenDraw.DrawFieldEdges(new List<IntVec3> { intVec2 }, GenTemperature.ColorSpotHot);
+        GenDraw.DrawFieldEdges([intVec], GenTemperature.ColorSpotCold);
+        GenDraw.DrawFieldEdges([intVec2], GenTemperature.ColorSpotHot);
         var roomOne = intVec2.GetRoom(currentMap);
         var roomTwo = intVec.GetRoom(currentMap);
         if (roomOne == null || roomTwo == null)
