@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make Hydrogen From Chemfuel -->
+  <Make_HydrogenFromChemfuel.label>Make Hydrogen From Chemfuel</Make_HydrogenFromChemfuel.label>
+  <!-- EN: Make a batch of Hydrogen by extracting and condensing Hydrogen from Chemfuel. -->
+  <Make_HydrogenFromChemfuel.description>Make a batch of Hydrogen by extracting and condensing Hydrogen from Chemfuel.</Make_HydrogenFromChemfuel.description>
+  <!-- EN: Refining Hydrogen from Chemfuel. -->
+  <Make_HydrogenFromChemfuel.jobString>Refining Hydrogen from Chemfuel.</Make_HydrogenFromChemfuel.jobString>
+</LanguageData>

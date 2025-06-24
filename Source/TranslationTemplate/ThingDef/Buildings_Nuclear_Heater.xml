@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Hydrogen Nuclear power core -->
+  <Hydrogen_Heater.label>Hydrogen Nuclear power core</Hydrogen_Heater.label>
+  <!-- EN: A hydrogen nuclear power core.That it can haeat around to a higher temperature. -->
+  <Hydrogen_Heater.description>A hydrogen nuclear power core.That it can haeat around to a higher temperature.</Hydrogen_Heater.description>
+  <!-- EN: Uranium Nuclear power core -->
+  <Uranium_Heater.label>Uranium Nuclear power core</Uranium_Heater.label>
+  <!-- EN: A uranium nuclear power core.That it can haeat around to a higher temperature. -->
+  <Uranium_Heater.description>A uranium nuclear power core.That it can haeat around to a higher temperature.</Uranium_Heater.description>
+</LanguageData>

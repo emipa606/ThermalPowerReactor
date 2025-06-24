@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Atomic basis -->
+  <Atomic_basis.label>Atomic basis</Atomic_basis.label>
+  <!-- EN: Atomic basis.After this research,you can have ablity to build the nuclear heater. -->
+  <Atomic_basis.description>Atomic basis.After this research,you can have ablity to build the nuclear heater.</Atomic_basis.description>
+  <!-- EN: Hydrogen Heater -->
+  <Hydrogen_Heater_Research.label>Hydrogen Heater</Hydrogen_Heater_Research.label>
+  <!-- EN: Unlock buding,Uranium Heater. -->
+  <Hydrogen_Heater_Research.description>Unlock buding,Uranium Heater.</Hydrogen_Heater_Research.description>
+  <!-- EN: Uranium Heater -->
+  <Uranium_Heater_Research.label>Uranium Heater</Uranium_Heater_Research.label>
+  <!-- EN: Unlock buding,Uranium Heater. -->
+  <Uranium_Heater_Research.description>Unlock buding,Uranium Heater.</Uranium_Heater_Research.description>
+</LanguageData>

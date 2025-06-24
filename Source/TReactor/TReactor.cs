@@ -29,13 +29,13 @@ public class TReactor : TCP
                 num = temperature - 1400f;
             }
 
-            var num2 = 1f - (num * (1f / 130f));
+            var num2 = 1f - (num * EfficiencyLossPerDegreeDifference);
             if (num2 < 0f)
             {
                 num2 = 0f;
             }
 
-            var num3 = compTempControl.Props.energyPerSecond * num2 * 4.1666665f;
+            var num3 = CompTempControl.Props.energyPerSecond * num2 * 4.1666665f;
             var num4 = GenTemperature.ControlTemperatureTempChange(intVec, Map, num3, 100f);
             tempChange = !Mathf.Approximately(num4, 0f);
             if (tempChange)

@@ -4,7 +4,7 @@ using Verse;
 
 namespace TReactor;
 
-[HarmonyPatch(typeof(RoomTempTracker), "Temperature", MethodType.Setter)]
+[HarmonyPatch(typeof(RoomTempTracker), nameof(RoomTempTracker.Temperature), MethodType.Setter)]
 public static class RoomTempTracker_Temperature
 {
     public static bool Prefix(float value, ref float ___temperatureInt)

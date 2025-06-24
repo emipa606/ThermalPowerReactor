@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Hydrogen Cans -->
+  <Hydrogen_Nuclear.label>Hydrogen Cans</Hydrogen_Nuclear.label>
+  <!-- EN: A kind of hydrogen.This is a kind of fuel for nuclear reactors -->
+  <Hydrogen_Nuclear.description>A kind of hydrogen.This is a kind of fuel for nuclear reactors</Hydrogen_Nuclear.description>
+</LanguageData>

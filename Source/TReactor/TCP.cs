@@ -4,13 +4,13 @@ namespace RimWorld;
 
 public class TCP : Building
 {
-    public CompPowerPlant CompPowerPlant;
-    public TCC compTempControl;
+    protected CompPowerPlant CompPowerPlant;
+    protected TCC CompTempControl;
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
         base.SpawnSetup(map, respawningAfterLoad);
-        compTempControl = GetComp<TCC>();
+        CompTempControl = GetComp<TCC>();
         CompPowerPlant = GetComp<CompPowerPlant>();
     }
 }

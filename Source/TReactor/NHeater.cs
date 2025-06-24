@@ -7,58 +7,66 @@ public class NHeater : NTempnuclear
 {
     private const float EfficiencyFalloffSpan = 100f;
 
-    public static float i;
+    private static float i;
 
-    public override void Tick()
+    protected override void Tick()
     {
-        if (!compPowerTrader.PowerOn)
+        if (!CompPowerTrader.PowerOn)
         {
             return;
         }
 
         var ambientTemperature = AmbientTemperature;
-        var num = ambientTemperature < 100f ? 1f :
-            !(ambientTemperature > 2000f) ? Mathf.InverseLerp(2000f, 100f, ambientTemperature) : 0f;
-        var energyLimit = compTempControl.Props.energyPerSecond * num * 4.1666665f;
+        var num = ambientTemperature < EfficiencyFalloffSpan ? 1f :
+            !(ambientTemperature > 2000f) ? Mathf.InverseLerp(2000f, EfficiencyFalloffSpan, ambientTemperature) : 0f;
+        var energyLimit = CompTempControl.Props.energyPerSecond * num * 4.1666665f;
         var num2 = GenTemperature.ControlTemperatureTempChange(Position, Map, energyLimit,
-            compTempControl.targetTemperature);
-        var operatingAtHighPower = compRefuelable.HasFuel && !Mathf.Approximately(num2, 0f);
+            CompTempControl.targetTemperature);
+        var operatingAtHighPower = CompRefuelable.HasFuel && !Mathf.Approximately(num2, 0f);
 
         if (i == 0f)
         {
-            i = compRefuelable.Props.fuelConsumptionRate;
+            i = CompRefuelable.Props.fuelConsumptionRate;
         }
 
-        var props = compPowerTrader.Props;
-        if (operatingAtHighPower && compTempControl.parent.IsHashIntervalTick(60))
+        var props = CompPowerTrader.Props;
+        switch (operatingAtHighPower)
         {
-            compRefuelable.Props.fuelConsumptionRate = i;
-            var room = this.GetRoom();
-            room.Temperature += num2;
-            compPowerTrader.PowerOutput = 0f - props.PowerConsumption;
-        }
-        else if (operatingAtHighPower)
-        {
-            compRefuelable.Props.fuelConsumptionRate = i;
-            compPowerTrader.PowerOutput = 0f - props.PowerConsumption;
-        }
-        else if (compTempControl.parent.IsHashIntervalTick(60))
-        {
-            compRefuelable.Props.fuelConsumptionRate = 0.1f;
-            compPowerTrader.PowerOutput =
-                (0f - props.PowerConsumption) * compTempControl.Props.lowPowerConsumptionFactor;
-            var room = this.GetRoom();
-            room.Temperature += num2 * (0.1f / i);
-        }
-        else
-        {
-            compRefuelable.Props.fuelConsumptionRate = 0.1f;
-            compPowerTrader.PowerOutput =
-                (0f - props.PowerConsumption) * compTempControl.Props.lowPowerConsumptionFactor;
+            case true when CompTempControl.parent.IsHashIntervalTick(60):
+            {
+                CompRefuelable.Props.fuelConsumptionRate = i;
+                var room = this.GetRoom();
+                room.Temperature += num2;
+                CompPowerTrader.PowerOutput = 0f - props.PowerConsumption;
+                break;
+            }
+            case true:
+                CompRefuelable.Props.fuelConsumptionRate = i;
+                CompPowerTrader.PowerOutput = 0f - props.PowerConsumption;
+                break;
+            default:
+            {
+                if (CompTempControl.parent.IsHashIntervalTick(60))
+                {
+                    CompRefuelable.Props.fuelConsumptionRate = 0.1f;
+                    CompPowerTrader.PowerOutput =
+                        (0f - props.PowerConsumption) * CompTempControl.Props.lowPowerConsumptionFactor;
+                    var room = this.GetRoom();
+                    room.Temperature += num2 * (0.1f / i);
+                }
+                else
+                {
+                    CompRefuelable.Props.fuelConsumptionRate = 0.1f;
+                    CompPowerTrader.PowerOutput =
+                        (0f - props.PowerConsumption) * CompTempControl.Props.lowPowerConsumptionFactor;
+                }
+
+                break;
+            }
         }
 
-        compExplosive.CompTick();
-        compRefuelable.CompTick();
-        compTempControl.operatingAtHighPower = operatingAtHighPower;
+        CompExplosive.CompTick();
+        CompRefuelable.CompTick();
+        CompTempControl.operatingAtHighPower = operatingAtHighPower;
     }
 }

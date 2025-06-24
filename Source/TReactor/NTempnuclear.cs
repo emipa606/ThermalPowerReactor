@@ -4,19 +4,19 @@ namespace RimWorld;
 
 public class NTempnuclear : Building
 {
-    public CompExplosive compExplosive;
+    protected CompExplosive CompExplosive;
 
-    public CompPowerTrader compPowerTrader;
+    protected CompPowerTrader CompPowerTrader;
 
-    public CompRefuelable compRefuelable;
-    public CompTempControl compTempControl;
+    protected CompRefuelable CompRefuelable;
+    protected CompTempControl CompTempControl;
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
         base.SpawnSetup(map, respawningAfterLoad);
-        compTempControl = GetComp<CompTempControl>();
-        compPowerTrader = GetComp<CompPowerTrader>();
-        compRefuelable = GetComp<CompRefuelable>();
-        compExplosive = GetComp<CompExplosive>();
+        CompTempControl = GetComp<CompTempControl>();
+        CompPowerTrader = GetComp<CompPowerTrader>();
+        CompRefuelable = GetComp<CompRefuelable>();
+        CompExplosive = GetComp<CompExplosive>();
     }
 }
