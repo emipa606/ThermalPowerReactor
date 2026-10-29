@@ -37,12 +37,12 @@ public class PlaceWorker_Cooler_2_Block : PlaceWorker
         }
     }
 
-    public override AcceptanceReport AllowsPlacing(BuildableDef def, IntVec3 center, Rot4 rot, Map map,
+    public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map,
         Thing thingToIgnore = null,
         Thing thing = null)
     {
-        var c = center + IntVec3.South.RotatedBy(rot) + IntVec3.South.RotatedBy(rot);
-        var c2 = center + IntVec3.North.RotatedBy(rot);
+        var c = loc + IntVec3.South.RotatedBy(rot) + IntVec3.South.RotatedBy(rot);
+        var c2 = loc + IntVec3.North.RotatedBy(rot);
         if (c.Impassable(map) || c2.Impassable(map))
         {
             return "MustPlaceCoolerWithFreeSpaces".Translate();

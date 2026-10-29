@@ -5,7 +5,7 @@ using Verse;
 namespace TReactor;
 
 [StaticConstructorOnStartup]
-public class Main
+public static class Main
 {
     static Main()
     {

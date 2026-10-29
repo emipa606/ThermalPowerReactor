@@ -3,4 +3,19 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="TReactor/TReactor.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDef/">
+    <File Path="../1.7/Defs/ThingDef/Buildings_Nuclear_Heater.xml" />
+    <File Path="../1.7/Defs/ThingDef/Carfting_Hydrogen.xml" />
+    <File Path="../1.7/Defs/ThingDef/Power_Iteam.xml" />
+    <File Path="../1.7/Defs/ThingDef/Temperature_Power.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ResearchProjectDefs/">
+    <File Path="../1.7/Defs/ResearchProjectDefs/ResearchProjects_Nuclear_Heater.xml" />
+  </Folder>
 </Solution>

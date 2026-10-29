@@ -17,8 +17,18 @@ public class NHeater : NTempnuclear
         }
 
         var ambientTemperature = AmbientTemperature;
-        var num = ambientTemperature < EfficiencyFalloffSpan ? 1f :
-            !(ambientTemperature > 2000f) ? Mathf.InverseLerp(2000f, EfficiencyFalloffSpan, ambientTemperature) : 0f;
+        float num;
+        if (ambientTemperature < EfficiencyFalloffSpan)
+        {
+            num = 1f;
+        }
+        else
+        {
+            num = !(ambientTemperature > 2000f)
+                ? Mathf.InverseLerp(2000f, EfficiencyFalloffSpan, ambientTemperature)
+                : 0f;
+        }
+
         var energyLimit = CompTempControl.Props.energyPerSecond * num * 4.1666665f;
         var num2 = GenTemperature.ControlTemperatureTempChange(Position, Map, energyLimit,
             CompTempControl.targetTemperature);
